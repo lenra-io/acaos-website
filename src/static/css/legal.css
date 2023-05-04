@@ -1,0 +1,27 @@
+main > section > p > strong::after {
+    content: ":";
+}
+
+main > section > ul > li {
+    display: inline-block;
+}
+
+main > section > ul > li::before {
+    content: "-";
+    margin: 0 0.75rem;
+}
+
+main > section > ul > li:first-of-type:before {
+    display: none;
+}
+
+
+@media (min-width: 50rem) {
+    main > section:first-of-type,
+    main > section:first-of-type + section {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        padding-right: calc(0.5rem * 3);
+    }
+}

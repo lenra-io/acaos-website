@@ -1,0 +1,224 @@
+extends .layout.pug
+
+block content
+    section#discover
+        h2(data-title="Qui sommes nous ?")
+            | Découvrez
+            |
+            strong Lenra 
+        
+        p
+            | Lenra, une agence de conception et de développement d’applications mobiles située sur La Rochelle.
+
+        p
+            | Nous sommes spécialisés dans le développement d'applications multi-plateformes (Android, iOS, Windows, macOS, Linux et le web).
+            | Nous créons des applications sur-mesures et vous accompagnons dans vos projets.
+
+        a.btn.primary.lenra-icon-send(href="#contact") Nous contacter
+    
+    section#values.alternate
+        h2(data-title="Nos valeurs")
+            | Lenra, fondée sur des valeurs
+            |
+            strong éthiques
+            |
+            | et
+            |
+            strong éco-responsables
+        p 
+            | Chez Lenra, nous croyons en la Responsabilité Sociale des Entreprises et nous intégrons des pratiques durables et éthiques dans tous nos projets.
+            | Nous travaillons avec des partenaires qui partagent nos valeurs et nous cherchons constamment à améliorer nos pratiques pour contribuer positivement à notre environnement et notre société.
+        h3(data-emoji="🧊") Intégrité
+        p Lenra s’engage à respecter les normes éthiques dans toutes ses activités, à être honnête et transparente.
+        h3(data-emoji="👥") Respect de la vie privée
+        p Lenra s’engage à protéger la vie privée de ses utilisateurs et à respecter les règles en matière de protection des données personnelles.
+        h3(data-emoji="🌱") Développement durable
+        p Lenra s’engage à utiliser des technologies et des pratiques de développement durables pour minimiser l’impact environnemental de son activité.
+        //- empty alt since not useful for understanding
+        img(src="img/illustrations/conception.svg" alt="" loading="lazy")
+    
+    section#services
+        h2(data-title="Nos services")
+            | Des services adaptés à
+            |
+            strong votre
+            |
+            | besoin
+
+        section.tab.pages
+            input#service-application(type="radio" name="service" checked)
+            label.lenra-icon-devices(for="service-application") Application
+            input#service-web-app(type="radio" name="service")
+            label.lenra-icon-layout(for="service-web-app") Web app
+            input#service-website(type="radio" name="service")
+            label.lenra-icon-globe(for="service-website") Site-web
+            input#service-api(type="radio" name="service")
+            label.lenra-icon-zap(for="service-api") API
+        
+            ul
+                li
+                    section
+                        h3.lenra-icon-devices Développement d’application
+                        p 
+                            | Notre équipe d'experts en développement d'applications vous aide à créer une application mobile ou de bureau personnalisée pour votre entreprise.
+                            | Nous proposons des services de développement pour les principales plateformes telles qu'iOS, Android, Windows, macOS et Linux.
+                            | Nous sommes en mesure de gérer l'ensemble du processus de développement, de la conception à la mise en œuvre, en passant par les tests et le lancement, nous sommes en mesure de réaliser tous types d’applications : marketplace, fitness, finances, jeux, réseau social, productivité et organisation, santé, livraison, e-commerce etc..
+                        p Les + : une expertise approfondie dans la conception et le développement de ces applications, ainsi qu'une compréhension approfondie des principales plateformes.
+                        ul
+                            li.lenra-icon-ios iOS
+                            li.lenra-icon-android Android
+                            li.lenra-icon-windows Windows
+                            li.lenra-icon-apple macOS
+                            li.lenra-icon-linux Linux
+                    //- aside todo: techno utilisées
+                    //-     ul
+                    //-         li.lenra-icon-flutter Flutter
+                    //-         li.lenra-icon-lenra Lenra
+                li
+                    section
+                        h3.lenra-icon-layout Développement d’application web
+                        p
+                            | Nous proposons également des services de développement d'applications web pour aider les entreprises à créer des  outils et services qui fonctionnent directement à partir de votre site web.
+                            | Nous sommes spécialisés dans les technologies telles que HTML, CSS, JavaScript, etc.
+                            | Nous pouvons vous aider à concevoir et à développer des applications web personnalisées pour répondre aux besoins spécifiques de votre entreprise.
+                li
+                    section
+                        h3.lenra-icon-globe Création de site-web
+                        p 
+                            | Nous offrons également des services de création de sites internet pour vous aider à créer une présence en ligne professionnelle.
+                            | Notre équipe peut concevoir et développer un site internet personnalisé qui reflète l'identité de votre entreprise et attire les visiteurs.
+                            | Nous pouvons gérer tous les aspects de la création, la conception, le développement, l'hébergement et la maintenance.
+                li
+                    section
+                        h3.lenra-icon-zap Développement d’API
+                        p 
+                            | Nous mettons notre expertise en développement d'applications au service de nos clients en leur proposant des API sur mesure et personnalisées, en intégrant des données, fonctionnalités spécifiques ou des services tiers.
+                            | Nous utilisons des logiciels tels que X, X et X pour concevoir des interfaces de programmation performantes, sécurisées et évolutives.
+                            | Notre priorité est de fournir des solutions API de qualité supérieure qui permettront à votre entreprise de rester compétitive dans un environnement technologique en constante évolution.
+
+    
+    //- section#technologies
+    //-     h2(data-title="Nos technologies")
+    //-         | Les outils clés pour votre
+    //-         |
+    //-         strong performance
+    //-     TODO: liste des technos
+
+    section#portfolio
+        h2(data-title="Notre réalisation")
+            | Un
+            |
+            strong portfolio
+            |
+            | bien rempli
+
+        section.tab.filter
+            input#portfolio-all(type="radio" name="portfolio" checked)
+            label(for="portfolio-all") Tout voir
+            input#portfolio-application(type="radio" name="portfolio")
+            label.lenra-icon-devices(for="portfolio-application") Application
+            input#portfolio-web-app(type="radio" name="portfolio")
+            label.lenra-icon-layout(for="portfolio-web-app") Web app
+            input#portfolio-website(type="radio" name="portfolio")
+            label.lenra-icon-globe(for="portfolio-website") Site-web
+            input#portfolio-api(type="radio" name="portfolio")
+            label.lenra-icon-zap(for="portfolio-api") API
+            ul
+                li#thomas.application.api
+                    img(src="../img/team/thomas.jpg" alt="Thomas Da Rocha")
+                    details  
+                        summary
+                            h3 Thomas Da Rocha
+                            p CEO
+                            +social().app.small
+                                a.lenra-icon-github(href="https://github.com/taorepoara" target="_blank" rel="noopener")
+                                a.lenra-icon-youtube(href="https://youtube.com/shorts/ukHZfjO391U?feature=share" target="_blank" rel="noopener")
+                                a.lenra-icon-linkedin(href="https://www.linkedin.com/in/thomas-da-rocha-57211170" target="_blank" rel="noopener")
+                        p
+                            | CEO of the company, he is the creator of the project.
+                            | He works on both the front-end and back-end and decides the direction to take for each progress made on the platform.
+                li#alienor.head
+                    img(src="../img/team/alienor.jpg" alt="Aliénor Malbosc")
+                    details  
+                        summary
+                            h3 Aliénor Malbosc
+                            p Communication Manager
+                            +social().app.small
+                                a.lenra-icon-linkedin(href="https://www.linkedin.com/in/aliénor-malbosc-b03609220" target="_blank" rel="noopener")
+                        p
+                            | She takes care of the digital communication strategy and manages our social networks.
+                li#nathalie.head
+                    img(src="../img/team/nathalie.jpg" alt="Nathalie Pestel")
+                    details  
+                        summary
+                            h3 Nathalie Pestel
+                            p CMO
+                            +social().app.small
+                                a.lenra-icon-linkedin(href="https://www.linkedin.com/in/nathalie-monrouzeau-822b9387" target="_blank" rel="noopener")
+                        p
+                            | Chief marketing officer of the company, she takes care of the company administration as well.
+                li#louis.developers
+                    img(src="../img/team/louis.jpg" alt="Louis Guilbert")
+                    details  
+                        summary
+                            h3 Louis Guilbert
+                            p Full Stack Developer
+                            +social().app.small
+                                a.lenra-icon-github(href="https://github.com/Nesqwik" target="_blank" rel="noopener")
+                        p
+                            | He is a full stack developer who has a global view on the project that gives him agility to intervene on any blocking problem.
+                            | He's also in charge of our R&amp;D department.
+                li#jonas.developers
+                    img(src="../img/team/jonas.jpg" alt="Jonas Martinez")
+                    details  
+                        summary
+                            h3 Jonas Martinez
+                            p Front-end Developer
+                            +social().app.small
+                                a.lenra-icon-github(href="https://github.com/jonas-martinez" target="_blank" rel="noopener")
+                                a.lenra-icon-youtube(href="https://youtube.com/shorts/1-OdmEHCYmQ?feature=share" target="_blank" rel="noopener")
+                        p
+                            | He is in charge of the frontend and more precisely of the present and future functionalities of the Lenra client.
+                            | He's an expert in
+                            |
+                            a(href="https://flutter.dev" target="_blank" rel="noopener") Flutter
+                            |
+                            | and
+                            |
+                            a(href="https://dart.dev" target="_blank" rel="noopener") Dart
+                            |
+                            | technologies.
+                li#emric.developers
+                    img(src="../img/team/emric.jpg" alt="Emric Pichonier")
+                    details  
+                        summary
+                            h3 Emric Pichonnier
+                            p Back-end Developer
+                            +social().app.small
+                                a.lenra-icon-github(href="https://github.com/pichoemr" target="_blank" rel="noopener")
+                                a.lenra-icon-youtube(href="https://youtube.com/shorts/Z9L4HFW7Vyc?feature=share" target="_blank" rel="noopener")
+                        p
+                            | He specializes in the backend part of IT and data management.
+                            | He's found of 
+                            |
+                            a(href="https://elixir-lang.org" target="_blank" rel="noopener") Elixir
+                            |
+                            | and built our advanced data management using
+                            |
+                            a(href="https://www.mongodb.com" target="_blank" rel="noopener") MongoDB
+                            | .
+                li#flavien.developers
+                    img(src="../img/team/flavien.jpg" alt="Flavien Cadet")
+                    details  
+                        summary
+                            h3 Flavien Cadet
+                            p DevSecOps
+                            +social().app.small
+                                a.lenra-icon-github(href="https://github.com/shiipou" target="_blank" rel="noopener")
+                                a.lenra-icon-youtube(href="https://youtube.com/shorts/kOgr8ZMIZ38?feature=share" target="_blank" rel="noopener")
+                        p
+                            | He is mainly in charge of the server administration and the security of the platform.
+                            |
+                            a(href="https://kubernetes.io") Kubernetes
+                            |
+                            | has no secret for him.

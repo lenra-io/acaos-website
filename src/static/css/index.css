@@ -1,0 +1,7 @@
+.tab.filter>input#portfolio-all:checked~ul>li,
+.tab.filter>input#portfolio-application:checked~ul>li.application,
+.tab.filter>input#portfolio-web-app:checked~ul>li.web-app,
+.tab.filter>input#portfolio-website:checked~ul>li.website,
+.tab.filter>input#portfolio-api:checked~ul>li.api {
+    display: flex;
+}

@@ -1,0 +1,27 @@
+{
+    "name": "prestation-website",
+    "description": "Lenra website for website and app creation prestations",
+    "authors": "Lenra",
+    "version": "0.0.0",
+    "scripts": {
+        "start": "lesta express",
+        "build": "lesta nginx"
+    },
+    "dependencies": {
+        "@lenra/lesta": "github:lenra-io/lesta"
+    },
+    "lesta": {
+        "languages": [
+            "fr"
+        ],
+        "nginx": {
+            "additionalContentSecurityPolicies": {
+                "default-src": [
+                    "unsafe-inline",
+                    "analytics.lenra.io",
+                    "https://unpkg.com/website-carbon-badges@1.1.3/"
+                ]
+            }
+        }
+    }
+}

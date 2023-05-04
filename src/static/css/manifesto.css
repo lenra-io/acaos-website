@@ -1,0 +1,59 @@
+#values>h2 {
+    display: none;
+}
+
+#values>h3 {
+    text-align: left;
+}
+
+#values>*:not(h2)+h3 {
+    margin-top: 3rem;
+}
+
+#documentation>img {
+    display: block;
+    width: 90%;
+    max-width: 54rem;
+    margin: 1.5rem auto;
+    border-radius: 0.5rem;
+    box-shadow: 1px 5px 10px -5px rgba(var(--text-color-data), 0.5);
+}
+
+#framework {
+    --horizontal-pos-multiplier: 0.75;
+}
+
+#framework>a.btn.primary {
+    margin-top: 1.5rem;
+}
+
+
+
+@media (min-width: 50rem) {
+    #values>h2 {
+        display: block;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -2;
+        right: calc(50% + var(--content-space) + 0.5rem * 4);
+        font-size: 1.5rem;
+        padding-bottom: 1.5rem;
+        text-align: right;
+    }
+
+    #values>h2>strong {
+        color: inherit;
+    }
+
+    #documentation>img {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media (min-width: 75rem) {
+    #values>h2::after {
+        content: " are to";
+    }
+}

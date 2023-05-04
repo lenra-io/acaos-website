@@ -1,0 +1,9 @@
+{
+    "title": "Lenra",
+    "pageList": [
+        {
+            "name": "index",
+            "path": "/"
+        }
+    ]
+}

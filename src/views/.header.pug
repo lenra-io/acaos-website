@@ -1,0 +1,53 @@
+- const headerGroups = {};
+
+mixin displayPageLink(p)
+    - const trad = page[p.name]
+    - const path = p.path || `/${p.name}.html`
+    if (p.disabled)
+        a(href=path disabled aria-disabled="true" tabindex="-1" title="Coming soon")= trad.name
+    else if (p.name == currentPage.basicPath)
+        a.current(href=path)= trad.name
+    else 
+        a(href=path)= trad.name
+
+mixin displayPageGroup(group, pages)
+    each page in pages
+        +displayPageLink(page)
+
+mixin displayNavElement(element)
+    - var type = typeof element
+    if (type == 'string')
+        - var pages = headerGroups[element]
+        if (pages.length==1)
+            +displayPageLink(pages[0])
+        else
+            +displayPageGroup(pageGroup[element], pages)
+    else 
+        +displayPageLink(element)
+
+header
+    nav.menu
+        - const items = pageList.filter(p => !p.notOnTop).flatMap(p => {
+        -    if (!p.group) return [p];
+        -    if (!headerGroups[p.group]) {
+        -        headerGroups[p.group] = [p];
+        -        return p.group;
+        -    }
+        -    else {
+        -        headerGroups[p.group].push(p);
+        -        return [];
+        -    }
+        - });
+
+        each el in items
+            +displayNavElement(el)
+
+    block header
+        h1 !{currentPage.titleHtml || currentPage.title || currentPage.name}
+        if currentPage.subtitle
+            h2 !{currentPage.subtitle}
+        if currentPage.headerTexts
+            each text  in currentPage.headerTexts
+                p= text
+        if currentPage.mainAction
+            a.btn.primary(href=currentPage.mainAction.href)= currentPage.mainAction.text

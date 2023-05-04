@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'Lenra-icons';
+  src:
+    url('../fonts/Lenra-icons.ttf?h4qjdp') format('truetype'),
+    url('../fonts/Lenra-icons.woff?h4qjdp') format('woff'),
+    url('../fonts/Lenra-icons.svg?h4qjdp#Lenra-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="lenra-icon-"]::before, [class*=" lenra-icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Lenra-icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.lenra-icon-logo-lenra:before {
+  content: "\e92e";
+}
+.lenra-icon-globe:before {
+  content: "\e900";
+}
+.lenra-icon-send:before {
+  content: "\e901";
+}
+.lenra-icon-chevron-down:before {
+  content: "\e92a";
+}
+.lenra-icon-chevron-left:before {
+  content: "\e92b";
+}
+.lenra-icon-chevron-right:before {
+  content: "\e92c";
+}
+.lenra-icon-chevron-up:before {
+  content: "\e92d";
+}
+.lenra-icon-arrow-up:before {
+  content: "\e917";
+}
+.lenra-icon-arrow-up-left:before {
+  content: "\e918";
+}
+.lenra-icon-arrow-left:before {
+  content: "\e919";
+}
+.lenra-icon-arrow-down-left:before {
+  content: "\e91a";
+}
+.lenra-icon-arrow-down:before {
+  content: "\e91b";
+}
+.lenra-icon-arrow-down-right:before {
+  content: "\e91c";
+}
+.lenra-icon-arrow-right:before {
+  content: "\e916";
+}
+.lenra-icon-arrow-up-right:before {
+  content: "\e91d";
+}
+.lenra-icon-devices:before {
+  content: "\e93f";
+}
+.lenra-icon-zap1:before {
+  content: "\e90c";
+}
+.lenra-icon-tiktok:before {
+  content: "\e934";
+}
+.lenra-icon-twitch:before {
+  content: "\e933";
+  color: #6441a4;
+}
+.lenra-icon-dev-dot-to:before {
+  content: "\e90b";
+}
+.lenra-icon-reddit:before {
+  content: "\e90a";
+  color: #ff4500;
+}
+.lenra-icon-github:before {
+  content: "\e904";
+}
+.lenra-icon-instagram:before {
+  content: "\e905";
+  color: #e4405f;
+}
+.lenra-icon-linkedin:before {
+  content: "\e906";
+  color: #0077b5;
+}
+.lenra-icon-twitter:before {
+  content: "\e907";
+  color: #1da1f2;
+}
+.lenra-icon-youtube:before {
+  content: "\e908";
+  color: #f00;
+}
+.lenra-icon-android:before {
+  content: "\e925";
+  color: #3ddc84;
+}
+.lenra-icon-ios:before {
+  content: "\e926";
+}
+.lenra-icon-apple:before {
+  content: "\e927";
+  color: #999;
+}
+.lenra-icon-linux:before {
+  content: "\e928";
+  color: #fcc624;
+}
+.lenra-icon-windows:before {
+  content: "\e929";
+  color: #0078d6;
+}
+.lenra-icon-cookies:before {
+  content: "\e941";
+  color: #f6c28b;
+}
