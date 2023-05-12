@@ -18,13 +18,13 @@ block content
     
     section#values.alternate
         h2(data-title="Nos valeurs")
-            | Lenra, fondée sur des valeurs
+            | Agence
             |
-            strong éthiques
+            strong éthique
             |
             | et
             |
-            strong éco-responsables
+            strong responsable
         p 
             | Chez Lenra, nous croyons en la Responsabilité Sociale des Entreprises et nous intégrons des pratiques durables et éthiques dans tous nos projets.
             | Nous travaillons avec des partenaires qui partagent nos valeurs et nous cherchons constamment à améliorer nos pratiques pour contribuer positivement à notre environnement et notre société.
@@ -35,7 +35,7 @@ block content
         h3(data-emoji="🌱") Développement durable
         p Lenra s’engage à utiliser des technologies et des pratiques de développement durables pour minimiser l’impact environnemental de son activité.
         //- empty alt since not useful for understanding
-        img(src="img/illustrations/conception.svg" alt="" loading="lazy")
+        img(src="img/undraw/undraw_nature_on_screen_xkli-modified.svg" alt="" loading="lazy")
     
     section#services
         h2(data-title="Nos services")
@@ -97,12 +97,14 @@ block content
                             | Notre priorité est de fournir des solutions API de qualité supérieure qui permettront à votre entreprise de rester compétitive dans un environnement technologique en constante évolution.
 
     
-    //- section#technologies
-    //-     h2(data-title="Nos technologies")
-    //-         | Les outils clés pour votre
-    //-         |
-    //-         strong performance
-    //-     TODO: liste des technos
+    section#technologies
+        h2(data-title="Nos technologies")
+            | Les outils clés pour votre
+            |
+            strong performance
+        //- TODO: lister les technos
+    
+        
 
     section#portfolio
         h2(data-title="Notre réalisation")
@@ -124,7 +126,7 @@ block content
             input#portfolio-api(type="radio" name="portfolio")
             label.lenra-icon-zap(for="portfolio-api") API
             ul
-                li#thomas.application.api
+                li#thomas.alternate.application.api
                     img(src="../img/team/thomas.jpg" alt="Thomas Da Rocha")
                     details  
                         summary
@@ -137,7 +139,7 @@ block content
                         p
                             | CEO of the company, he is the creator of the project.
                             | He works on both the front-end and back-end and decides the direction to take for each progress made on the platform.
-                li#alienor.head
+                li#alienor.head.alternate
                     img(src="../img/team/alienor.jpg" alt="Aliénor Malbosc")
                     details  
                         summary
@@ -147,7 +149,7 @@ block content
                                 a.lenra-icon-linkedin(href="https://www.linkedin.com/in/aliénor-malbosc-b03609220" target="_blank" rel="noopener")
                         p
                             | She takes care of the digital communication strategy and manages our social networks.
-                li#nathalie.head
+                li#nathalie.head.alternate
                     img(src="../img/team/nathalie.jpg" alt="Nathalie Pestel")
                     details  
                         summary
@@ -157,7 +159,7 @@ block content
                                 a.lenra-icon-linkedin(href="https://www.linkedin.com/in/nathalie-monrouzeau-822b9387" target="_blank" rel="noopener")
                         p
                             | Chief marketing officer of the company, she takes care of the company administration as well.
-                li#louis.developers
+                li#louis.developers.alternate
                     img(src="../img/team/louis.jpg" alt="Louis Guilbert")
                     details  
                         summary
@@ -168,7 +170,7 @@ block content
                         p
                             | He is a full stack developer who has a global view on the project that gives him agility to intervene on any blocking problem.
                             | He's also in charge of our R&amp;D department.
-                li#jonas.developers
+                li#jonas.developers.alternate
                     img(src="../img/team/jonas.jpg" alt="Jonas Martinez")
                     details  
                         summary
