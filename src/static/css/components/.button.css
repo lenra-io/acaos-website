@@ -162,6 +162,13 @@ a.btn.link.lenra-icon-arrow-right::before {
     font-size: 120%;
 }
 
+a.btn:not(.link)[class^="lenra-icon-"]::before,
+a.btn:not(.link)[class*=" lenra-icon-"]::before {
+    vertical-align: middle;
+    color: inherit;
+    margin-right: 0.5rem;
+}
+
 nav.social {
     --size: var(--button-height);
     --font-size-multiplier: calc(2 / 3);
@@ -217,6 +224,7 @@ nav.social.app>a::before {
 }
 
 @media (min-width: 28.75rem) {
+
     button,
     a.btn:not(.link) {
         display: inline-block;

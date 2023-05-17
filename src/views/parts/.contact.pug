@@ -1,0 +1,16 @@
+section#contact.arrows
+    h2(data-title="Contactez-nous")
+        | Rentrons en
+        |
+        strong contact 
+
+    form
+        label(for="name") Nom
+        input#name(type="text" name="name" placeholder="Votre nom" required)
+        label(for="name") E-mail
+        input#email(type="email" name="email" placeholder="Votre adresse e-mail" required)
+        label(for="name") Message
+        textarea#message(name="message" placeholder="La description de votre projet" required)
+        button.primary Envoyer
+
+    script(src='js/contact.js' defer)

@@ -8,7 +8,7 @@
             return false;
         }
         // send form
-        form.action="https://airform.io/contact@lenra.io";
+        form.action="https://airform.io/agence@lenra.fr";
         form.method="post";
         form.target="_blank"
     };

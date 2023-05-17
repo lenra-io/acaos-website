@@ -1,0 +1,32 @@
+#contact > form {
+    text-align: left;
+    padding-top: 3rem;
+    max-width: 37.5rem;
+    margin: auto;
+}
+
+#contact label {
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+    padding-top: 2rem;
+}
+
+#contact input,
+#contact textarea {
+    --text-opacity: 0.65;
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 0.0625rem solid;
+    border-radius: 0.25rem;
+}
+
+#contact textarea {
+    height: 7.5rem;
+    resize: vertical;
+}
+
+#contact form button {
+    width: 100%;
+}

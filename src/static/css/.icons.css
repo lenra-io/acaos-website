@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'Lenra-icons';
   src:
-    url('../fonts/Lenra-icons.ttf?h4qjdp') format('truetype'),
-    url('../fonts/Lenra-icons.woff?h4qjdp') format('woff'),
-    url('../fonts/Lenra-icons.svg?h4qjdp#Lenra-icons') format('svg');
+    url('../fonts/Lenra-icons.ttf?8l7xv4') format('truetype'),
+    url('../fonts/Lenra-icons.woff?8l7xv4') format('woff'),
+    url('../fonts/Lenra-icons.svg?8l7xv4#Lenra-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,7 +24,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.lenra-icon-logo-lenra:before {
+.lenra-icon-lenra:before {
   content: "\e92e";
 }
 .lenra-icon-globe:before {
@@ -72,8 +72,11 @@
 .lenra-icon-devices:before {
   content: "\e93f";
 }
-.lenra-icon-zap1:before {
+.lenra-icon-zap:before {
   content: "\e90c";
+}
+.lenra-icon-layout:before {
+  content: "\e902";
 }
 .lenra-icon-tiktok:before {
   content: "\e934";
