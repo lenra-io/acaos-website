@@ -1,7 +1,74 @@
-.tab.filter>input#portfolio-all:checked~ul>li,
-.tab.filter>input#portfolio-application:checked~ul>li.application,
-.tab.filter>input#portfolio-web-app:checked~ul>li.web-app,
-.tab.filter>input#portfolio-website:checked~ul>li.website,
-.tab.filter>input#portfolio-api:checked~ul>li.api {
+#portfolio .tab.filter>input#portfolio-all:checked~ul>li,
+#portfolio .tab.filter>input#portfolio-application:checked~ul>li.application,
+#portfolio .tab.filter>input#portfolio-web-app:checked~ul>li.web-app,
+#portfolio .tab.filter>input#portfolio-website:checked~ul>li.website,
+#portfolio .tab.filter>input#portfolio-api:checked~ul>li.api {
     display: flex;
+}
+
+#portfolio .tab.filter>ul {
+    padding: 2rem 0;
+    gap: 1.5rem;
+}
+
+#portfolio .tab.filter>ul>li {
+    border-radius: 0.5rem;
+    /* border: calc(1rem / 16) solid; */
+    overflow: hidden;
+    position: relative;
+    padding-top: calc(100% * 9 / 16);
+    width: 100%;
+    min-height: 15rem;
+}
+
+#portfolio .tab.filter>ul>li>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    object-fit: contain;
+    object-position: 0% 0%;
+}
+
+#portfolio .tab.filter>ul>li>details {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    background-color: rgba(var(--background-color-data), 0.9);
+    padding: 1.5rem 1rem 0;
+    text-align: left;
+}
+
+#portfolio .tab.filter>ul>li>details[open] {
+    padding-bottom: 1rem;
+}
+
+#portfolio .tab.filter>ul>li>details a.btn.link {
+    --btn-text-color-data: var(--text-color-data);
+    --btn-text-color-hover-data: var(--text-color-data);
+}
+
+@media (min-width: 50rem) {
+    #portfolio .tab.filter>ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* #portfolio .tab.filter>ul>li>details {
+        opacity: 0;
+        transition-property: opacity;
+    }
+
+    #portfolio .tab.filter>ul>li:hover>details,
+    #portfolio .tab.filter>ul>li>details[open] {
+        opacity: 1;
+    } */
+}
+
+@media (min-width: 70rem) {
+    #portfolio .tab.filter>ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

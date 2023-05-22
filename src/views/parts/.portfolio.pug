@@ -17,8 +17,9 @@ section#portfolio
         label.lenra-icon-globe(for="portfolio-website") Site-web
         input#portfolio-api(type="radio" name="portfolio")
         label.lenra-icon-zap(for="portfolio-api") API
+        - var classes = "invert-colors"
         ul
-            li.website.web-app
+            li.website.web-app.api(class=classes)
                 img(src="../img/portfolio/fitness-park-heroes.jpg" alt="Capture du site de l'événement Fitness Park Heroes 2023")
                 details
                     summary
@@ -31,7 +32,7 @@ section#portfolio
 
                     a.btn.link.lenra-icon-arrow-right(href="https://www.heroes.fitnesspark.fr/" target="_blank") Voir le site
 
-            li.website
+            li.website(class=classes)
                 img(src="../img/portfolio/lenra-docs.jpg" alt="Capture du site de documentation de Lenra")
                 details
                     summary
@@ -43,7 +44,7 @@ section#portfolio
 
                     a.btn.link.lenra-icon-arrow-right(href="https://docs.lenra.io/" target="_blank") Voir le site
 
-            li.website
+            li.website(class=classes)
                 img(src="../img/portfolio/lenra-website.webp" alt="Capture du site de présentation de Lenra")
                 details
                     summary
@@ -54,7 +55,7 @@ section#portfolio
 
                     a.btn.link.lenra-icon-arrow-right(href="https://www.lenra.io/" target="_blank") Voir le site
 
-            li.application.web-app.api
+            li.application.web-app.api(class=classes)
                 img(src="../img/portfolio/lenra-back-office.jpg" alt="Capture du back-office de Lenra")
                 details
                     summary
@@ -66,7 +67,7 @@ section#portfolio
 
                     a.btn.link.lenra-icon-arrow-right(href="https://app.lenra.io/" target="_blank") Tester Lenra
 
-            li.website
+            li.website(class=classes)
                 img(src="../img/portfolio/go-sport-training-festival.webp" alt="Capture du site de l'événement Go Sport Training Festival")
                 details
                     summary
@@ -77,13 +78,25 @@ section#portfolio
                     p
                         | Nous avons conçu le site web de cet événement.
 
-            li.website
-                img(src="../img/portfolio/go-sport-training-festival.webp" alt="Capture du site de l'événement Go Sport Training Festival")
+            li.website.web-app.api(class=classes)
+                img(src="../img/portfolio/rush-challenge.jpg" alt="Capture du site de l'événement Rush Challenge")
                 details
                     summary
-                        h3 Go Sport Training Festival
+                        h3 Rush Challenge
                     p
-                        | Le Go Sport Training Festival est un événement festif et sportif qui se déroule chaque année.
-                        | Le site web est destiné à promouvoir l'événement auprès du public et à permettre aux utilisateurs de s'inscrire et de réserver leur place pour les différentes activités proposées.
+                        | Ce projet est une campagne publicitaire numérique menée pour la marque Intersport en collaboration avec la marque Under Armour.
+                        | Plusieurs centaines de personnes se sont challengées avec Rush Challenge pour tenter de rencontrer Teddy Riner sur un défi engageant.
                     p
-                        | Nous avons conçu le site web de cet événement.
+                        | Nous avons conçu le site web de ce challenge et le système de classement.
+
+            li.web-app(class=classes)
+                img(src="../img/portfolio/nike-golden-blocks-pegasus35.webp" alt="Capture du site de l'événement Nike Pegasus 35")
+                details
+                    summary
+                        h3 Nike - Pegasus 35
+                    p
+                        | Ce projet est une campagne publicitaire numérique menée pour Nike. La campagne avait pour objectif de promouvoir la nouvelle chaussure de running de Nike auprès d'un public cible de jeunes adultes.
+                        | Les résultats de la campagne ont été positifs, avec une augmentation significative du trafic et des ventes en ligne pour Nike.
+                        | La campagne a également remporté un prix dans la catégorie "Activation de marque" aux Cannes Lions 2018.
+                    p
+                        | Nous avons conçu une petite web app sans accès à internet qui servait de compteurs kilométrique sur l'événement.
