@@ -1,3 +1,19 @@
-#services ul>li>section {
+#services>.tab>ul {
+    max-width: 65rem;
+    margin: auto;
+}
+
+#services>.tab>ul>li {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
     text-align: left;
+}
+
+#services>.tab>ul>li>section {
+    text-align: left;
+}
+
+#services>.tab>ul>li>section>h3:is([class^="lenra-icon-"], [class*=" lenra-icon-"])::before {
+    margin-right: 0.5rem;
 }

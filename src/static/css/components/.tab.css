@@ -21,6 +21,18 @@
     transition-property: color, background-color;
 }
 
+.tab>label:is([class^="lenra-icon-"], [class*=" lenra-icon-"]) {
+    padding-left: calc(1rem + 1rem + 0.5rem);
+}
+
+.tab>label:is([class^="lenra-icon-"], [class*=" lenra-icon-"])::before {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: inherit;
+}
+
 .tab>input[type="radio"]:checked+label {
     background-color: rgb(var(--primary-color-data));
     color: rgb(var(--white-data));
@@ -50,15 +62,6 @@
 .tab>label:last-of-type::after {
     border-top-right-radius: inherit;
     border-bottom-right-radius: inherit;
-}
-
-
-
-.tab>label[class^="lenra-icon-"]::before,
-.tab>label[class*=" lenra-icon-"]::before {
-    /* vertical-align: middle; */
-    color: inherit;
-    margin-right: 0.5rem;
 }
 
 
@@ -133,5 +136,13 @@
 @media (min-width: 50rem) {
     .tab>label {
         padding: 0.5rem 2rem;
+    }
+
+    .tab>label:is([class^="lenra-icon-"], [class*=" lenra-icon-"]) {
+        padding-left: calc(2rem + 1rem + 0.5rem);
+    }
+    
+    .tab>label:is([class^="lenra-icon-"], [class*=" lenra-icon-"])::before {
+        left: 2rem;
     }
 }
