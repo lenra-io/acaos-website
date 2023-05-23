@@ -1,58 +1,26 @@
-- const footerGroups = {};
-
+- const footerParts = parts.map(p => ({...partsData[p], id: p, path: `/#${p}`}));
 mixin displayFooterPageLink(p)
-    - const trad = page[p.name]
-    - const path = p.path || `/${p.name}.html`
     if (p.disabled)
-        a(href=path disabled aria-disabled="true" tabindex="-1" title="Bientôt")= trad.name
+        a(href=p.path disabled aria-disabled="true" tabindex="-1" title="Bientôt")= p.name
     else 
-        a(href=path)= trad.name
+        a(href=p.path)= p.name
 
-mixin displayFooterPageGroup(group, pages)
-    - var disabled = pages.filter(p => !p.disabled).length==0
-    if (disabled)
-        section
-            h3= group.name
-            each page in pages
-                +displayFooterPageLink(page)
-    else
-        section
-            h3= group.name
-            each page in pages
-                +displayFooterPageLink(page)
-
-mixin displayFooterElement(element)
-    - var pages = footerGroups[element]
-    +displayFooterPageGroup(pageGroup[element], pages)
+mixin displayFooterGroup(group)
+    section
+        h3= group.name
+        - console.log("group", group.id, "elements", footerParts.filter(p => p.group==group.id))
+        - var elements = footerParts.filter(p => p.group==group.id);
+        if (group.id=="contact")
+            - elements.push({name: "Mention legales", path: "/legal.html"})
+        each page in elements
+            +displayFooterPageLink(page)
 
 footer.invert-colors
     a(href="/") Lenra
-    nav
-        //- section#financed-by
-        //-     h3 Project financed by
-        //-     a(href="https://www.nouvelle-aquitaine.fr" target="_blank" rel="noopener")
-        //-         img(src="img/partners/NouvelleAquitaine-vertical.svg" alt="Nouvelle Aquitaine" loading="lazy")
-        //-     a(href="https://www.bpifrance.fr" target="_blank" rel="noopener")
-        //-         img(src="img/partners/bpi.svg" alt="Bpifrance" loading="lazy")
-        //- section
-        //-     h3 Developpers
-        //-     //- a(href="https://app.lenra.io") app.lenra.io
-        //-     a(href="https://dev.lenra.io") Dev platform
-        //-     a(href="https://docs.lenra.io") Documentation
-        
-        - const footerItems = pageList.filter(p => p.group).flatMap(p => {
-        -    if (!footerGroups[p.group]) {
-        -        footerGroups[p.group] = [p];
-        -        return p.group;
-        -    }
-        -    else {
-        -        footerGroups[p.group].push(p);
-        -        return [];
-        -    }
-        - });
-
-        each el in footerItems
-            +displayFooterElement(el)
+    nav 
+        - const groups = footerGroups.map(p => ({...footerGroupsData[p], id: p}));
+        each el in groups
+            +displayFooterGroup(el)
 
     ul 
         li Suivez nous

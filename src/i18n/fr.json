@@ -4,19 +4,51 @@
             "name": "Transformez vos idées en app",
             "description": "Votre projet a besoin d'une application e-commerce, d'un réseau social ou d'une marketplace ? Forts d'une expertise dans la création d'application depuis plus de 8 ans, sur La Rochelle, nous saurons vous guider pour bien définir vos besoins et co-construire avec vous l'application de vos rêves.",
             "headerTexts": [
-                "Votre projet a besoin d'une application e-commerce, d'un réseau social ou d'une marketplace ? Forts d'une expertise dans la création d'application depuis plus de 8 ans, sur La Rochelle, nous saurons vous guider pour bien définir vos besoins et co-construire avec vous l'application de vos rêves."
+                "Votre projet a besoin d'une application e-commerce, d'un réseau social ou d'une marketplace ? Grâce à une équipe de développeurs expérimentés, notre agence sur La Rochelle, saura vous guider pour bien définir vos besoins et co-construire avec vous l'application de vos rêves."
             ]
         }
     },
-    "pageGroup": {
-        "platform": {
-            "name": "Platform"
+    "footerGroupsData": {
+        "us": {
+            "name": "Nous"
         },
-        "company": {
-            "name": "Company"
+        "services": {
+            "name": "Nos services"
         },
         "contact": {
-            "name": "Contact"
+            "name": "Nous contacter"
+        }
+    },
+    "partsData": {
+        "discover": {
+            "name": "L'agence",
+            "group": "us"
+        },
+        "values": {
+            "name": "Nos valeurs",
+            "group": "us",
+            "notInHeader": true
+        },
+        "services": {
+            "name": "Services",
+            "group": "services"
+        },
+        "technologies": {
+            "name": "Technologies",
+            "group": "services",
+            "notInHeader": true
+        },
+        "portfolio": {
+            "name": "Réalisations",
+            "group": "services"
+        },
+        "team": {
+            "name": "L'équipe",
+            "group": "us"
+        },
+        "contact": {
+            "name": "Contact",
+            "group": "contact"
         }
     }
 }

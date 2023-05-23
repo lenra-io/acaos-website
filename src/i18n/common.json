@@ -5,5 +5,15 @@
             "name": "index",
             "path": "/"
         }
+    ],
+    "footerGroups": ["us", "services", "contact"],
+    "parts": [
+        "discover",
+        "values",
+        "services",
+        "technologies",
+        "portfolio",
+        "team",
+        "contact"
     ]
 }

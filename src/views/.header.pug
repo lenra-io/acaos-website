@@ -1,46 +1,18 @@
 - const headerGroups = {};
 
-mixin displayPageLink(p)
-    - const trad = page[p.name]
-    - const path = p.path || `/${p.name}.html`
+mixin displayPartLink(p)
     if (p.disabled)
-        a(href=path disabled aria-disabled="true" tabindex="-1" title="Coming soon")= trad.name
-    else if (p.name == currentPage.basicPath)
-        a.current(href=path)= trad.name
+        a(href=p.path disabled aria-disabled="true" tabindex="-1" title="Coming soon")= p.name
     else 
-        a(href=path)= trad.name
-
-mixin displayPageGroup(group, pages)
-    each page in pages
-        +displayPageLink(page)
-
-mixin displayNavElement(element)
-    - var type = typeof element
-    if (type == 'string')
-        - var pages = headerGroups[element]
-        if (pages.length==1)
-            +displayPageLink(pages[0])
-        else
-            +displayPageGroup(pageGroup[element], pages)
-    else 
-        +displayPageLink(element)
+        a(href=p.path)= p.name
 
 header
     nav.menu
-        - const items = pageList.filter(p => !p.notOnTop).flatMap(p => {
-        -    if (!p.group) return [p];
-        -    if (!headerGroups[p.group]) {
-        -        headerGroups[p.group] = [p];
-        -        return p.group;
-        -    }
-        -    else {
-        -        headerGroups[p.group].push(p);
-        -        return [];
-        -    }
-        - });
-
+        a(href="/") Lenra
+        - const items = parts.map(p => ({...partsData[p], id: p, path: `/#${p}`}));
         each el in items
-            +displayNavElement(el)
+            if (!el.notInHeader)
+                +displayPartLink(el)
 
     block header
         h1 !{currentPage.titleHtml || currentPage.title || currentPage.name}
