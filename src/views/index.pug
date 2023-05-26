@@ -1,5 +1,14 @@
 extends .layout.pug
 
+mixin displayTechnologies(techs)
+    ul
+        each technology in techs
+            - var logo = technology.logo ?? `${technology.key}.svg`;
+            li
+                figure
+                    img(src=`img/technologies/${logo}` alt=technology.name width=64 height=64)
+                    figcaption= technology.name
+
 block content
     include parts/.discover.pug
     include parts/.values.pug

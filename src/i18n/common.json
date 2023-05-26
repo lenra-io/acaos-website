@@ -6,7 +6,11 @@
             "path": "/"
         }
     ],
-    "footerGroups": ["us", "services", "contact"],
+    "footerGroups": [
+        "us",
+        "services",
+        "contact"
+    ],
     "parts": [
         "discover",
         "values",
@@ -15,5 +19,112 @@
         "portfolio",
         "team",
         "contact"
+    ],
+    "technologies": [
+        {
+            "key": "lenra",
+            "name": "Lenra",
+            "categories": [
+                "application",
+                "web-app",
+                "api"
+            ]
+        },
+        {
+            "key": "flutter",
+            "name": "Flutter",
+            "categories": [
+                "application",
+                "web-app"
+            ]
+        },
+        {
+            "key": "lesta",
+            "name": "Lesta",
+            "logo": "lenra.svg",
+            "categories": [
+                "website"
+            ]
+        },
+        {
+            "key": "react",
+            "name": "React",
+            "categories": [
+                "web-app"
+            ]
+        },
+        {
+            "key": "spring-boot",
+            "name": "Spring Boot",
+            "categories": [
+                "web-app",
+                "api"
+            ]
+        },
+        {
+            "key": "express",
+            "name": "Express",
+            "categories": [
+                "web-app",
+                "api"
+            ]
+        },
+        {
+            "key": "phoenix",
+            "name": "Phoenix",
+            "categories": [
+                "web-app",
+                "api"
+            ]
+        },
+        {
+            "key": "postgresql",
+            "name": "PostgreSQL",
+            "categories": [
+                "database"
+            ]
+        },
+        {
+            "key": "mongodb",
+            "name": "MongoDB",
+            "categories": [
+                "database"
+            ]
+        },
+        {
+            "key": "gitlab-ci",
+            "name": "GitLab CI",
+            "categories": [
+                "devops"
+            ]
+        },
+        {
+            "key": "github-actions",
+            "name": "GitHub Actions",
+            "categories": [
+                "devops"
+            ]
+        },
+        {
+            "key": "docker",
+            "name": "Docker",
+            "categories": [
+                "devops"
+            ]
+        },
+        {
+            "key": "kubernetes",
+            "name": "Kubernetes",
+            "categories": [
+                "devops"
+            ]
+        },
+        {
+            "key": "docker-compose",
+            "name": "Docker Compose",
+            "categories": [
+                "devops"
+            ]
+        }
     ]
 }

@@ -32,9 +32,7 @@ section#services
                         li.lenra-icon-apple macOS
                         li.lenra-icon-linux Linux
                 aside
-                    ul
-                        li.lenra-icon-flutter Flutter
-                        li.lenra-icon-lenra Lenra
+                    +displayTechnologies(technologies.filter(technology => technology.categories.includes('application')))
             li
                 section
                     h3.lenra-icon-layout Développement d'application web
@@ -43,9 +41,7 @@ section#services
                         | Nous sommes spécialisés dans les technologies telles que HTML, CSS, JavaScript, etc.
                         | Nous pouvons vous aider à concevoir et à développer des applications web personnalisées pour répondre aux besoins spécifiques de votre entreprise.
                 aside
-                    ul
-                        li.lenra-icon-flutter Flutter
-                        li.lenra-icon-lenra Lenra
+                    +displayTechnologies(technologies.filter(technology => technology.categories.includes('web-app')))
             li
                 section
                     h3.lenra-icon-globe Création de site web
@@ -54,9 +50,7 @@ section#services
                         | Notre équipe peut concevoir et développer un site internet personnalisé qui reflète l'identité de votre entreprise et attire les visiteurs.
                         | Nous pouvons gérer tous les aspects de la création, la conception, le développement, l'hébergement et la maintenance.
                 aside
-                    ul
-                        li.lenra-icon-flutter Flutter
-                        li.lenra-icon-lenra Lenra
+                    +displayTechnologies(technologies.filter(technology => technology.categories.includes('website')))
             li
                 section
                     h3.lenra-icon-zap Développement d'API
@@ -65,6 +59,4 @@ section#services
                         | Nous utilisons des logiciels tels que X, X et X pour concevoir des interfaces de programmation performantes, sécurisées et évolutives.
                         | Notre priorité est de fournir des solutions API de qualité supérieure qui permettront à votre entreprise de rester compétitive dans un environnement technologique en constante évolution.
                 aside
-                    ul
-                        li.lenra-icon-flutter Flutter
-                        li.lenra-icon-lenra Lenra
+                    +displayTechnologies(technologies.filter(technology => technology.categories.includes('api')))
