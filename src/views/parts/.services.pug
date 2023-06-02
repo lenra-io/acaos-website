@@ -7,14 +7,24 @@ section#services
         | besoin
 
     section.tab.pages
-        input#service-application(type="radio" name="service" checked)
-        label.lenra-icon-devices(for="service-application") Application
-        input#service-web-app(type="radio" name="service")
-        label.lenra-icon-layout(for="service-web-app") Web app
-        input#service-website(type="radio" name="service")
-        label.lenra-icon-globe(for="service-website") Site-web
-        input#service-api(type="radio" name="service")
-        label.lenra-icon-zap(for="service-api") API
+        +tab_nav("service", [
+            {id: "application", label: "Application"},
+            {id: "web-app", label: "Web app"},
+            {id: "website", label: "Site-web"},
+            {id: "api", label: "API"}
+        ])
+        //- input#service-application(type="radio" name="service" checked)
+        //- input#service-web-app(type="radio" name="service")
+        //- input#service-website(type="radio" name="service")
+        //- input#service-api(type="radio" name="service")
+        
+        //- nav
+        //-     label.lenra-icon-devices(for="service-application") Application
+        //-     label.lenra-icon-layout(for="service-web-app") Web app
+        //-     label.lenra-icon-globe(for="service-website") Site-web
+        //-     label.lenra-icon-zap(for="service-api") API
+    
+
     
         ul
             li

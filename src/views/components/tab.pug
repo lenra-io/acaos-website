@@ -1,0 +1,7 @@
+mixin tab_nav(name, tabs)
+    each tab, i in tabs
+        input(type="radio" name=name id=`${name}-${tab.id}` checked=(i===0))
+    nav
+        each tab in tabs
+            label(for=`${name}-${tab.id}`)= tab.label
+    
