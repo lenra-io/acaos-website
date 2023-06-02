@@ -5,16 +5,14 @@ section#portfolio
         strong réalisations
 
     section.tab.filter
-        input#portfolio-all(type="radio" name="portfolio" checked)
-        label(for="portfolio-all") Tout voir
-        input#portfolio-application(type="radio" name="portfolio")
-        label.lenra-icon-devices(for="portfolio-application") Application
-        input#portfolio-web-app(type="radio" name="portfolio")
-        label.lenra-icon-layout(for="portfolio-web-app") Web app
-        input#portfolio-website(type="radio" name="portfolio")
-        label.lenra-icon-globe(for="portfolio-website") Site web
-        input#portfolio-api(type="radio" name="portfolio")
-        label.lenra-icon-zap(for="portfolio-api") API
+        +tab_nav("portfolio", [
+            { id: "all", label: "Tout voir" },
+            { id: "application", label: "Application" },
+            { id: "web-app", label: "Web app" },
+            { id: "website", label: "Site web" },
+            { id: "api", label: "API" },
+        ])
+        
         - var classes = "invert-colors"
         ul
             li.website.web-app.api(class=classes)
