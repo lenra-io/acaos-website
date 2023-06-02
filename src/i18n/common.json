@@ -39,18 +39,18 @@
             ]
         },
         {
+            "key": "react",
+            "name": "React",
+            "categories": [
+                "web-app"
+            ]
+        },
+        {
             "key": "lesta",
             "name": "Lesta",
             "logo": "lenra.svg",
             "categories": [
                 "website"
-            ]
-        },
-        {
-            "key": "react",
-            "name": "React",
-            "categories": [
-                "web-app"
             ]
         },
         {
@@ -113,15 +113,15 @@
             ]
         },
         {
-            "key": "kubernetes",
-            "name": "Kubernetes",
+            "key": "docker-compose",
+            "name": "Docker Compose",
             "categories": [
                 "devops"
             ]
         },
         {
-            "key": "docker-compose",
-            "name": "Docker Compose",
+            "key": "kubernetes",
+            "name": "Kubernetes",
             "categories": [
                 "devops"
             ]

@@ -5,9 +5,11 @@
 
 #services>.tab>ul>li {
     display: inline-flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     text-align: left;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 #services>.tab>ul>li>section {
@@ -16,4 +18,45 @@
 
 #services>.tab>ul>li>section>h3:is([class^="lenra-icon-"], [class*=" lenra-icon-"])::before {
     margin-right: 0.5rem;
+}
+
+#services>.tab>ul>li:first-of-type>section>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+#services>.tab>ul>li:first-of-type>section>ul>li {
+    --size: 2rem;
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    text-indent: -100vw;
+    overflow: hidden;
+}
+
+#services>.tab>ul>li:first-of-type>section>ul>li::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-indent: 0;
+    font-size: var(--size);
+}
+
+#services>.tab>ul>li>aside ul.technologies>li img {
+    --size: 6rem;
+}
+
+@media (min-width: 50rem) {
+    #services>.tab>ul>li {
+        flex-direction: row;
+    }
+
+    #services>.tab>ul>li>aside {
+        width: 20rem;
+    }
 }

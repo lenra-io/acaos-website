@@ -1,7 +1,7 @@
 extends .layout.pug
 
 mixin displayTechnologies(techs)
-    ul
+    ul.technologies
         each technology in techs
             - var logo = technology.logo ?? `${technology.key}.svg`;
             li

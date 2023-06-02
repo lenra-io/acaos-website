@@ -1,4 +1,5 @@
 @import 'parts/.services.css';
+@import 'parts/.technologies.css';
 @import 'parts/.portfolio.css';
 @import 'parts/.team.css';
 @import 'parts/.contact.css';
@@ -12,13 +13,18 @@ section.invert-colors>a {
 }
 
 @media (min-width: 28.75rem) {
-    #discover > a.btn:not(.link) {
+    #discover>a.btn:not(.link) {
         margin-top: 1rem;
     }
 }
 
-
 @media (min-width: 50rem) {
+    body>header::after {
+        background-image: url("../img/header.svg");
+        background-size: contain;
+        background-position: 50%;
+    }
+
     section.invert-colors {
         --section-padding-top: 10;
         --section-padding-bottom: 10;
