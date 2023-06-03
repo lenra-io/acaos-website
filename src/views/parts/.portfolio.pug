@@ -5,21 +5,19 @@ section#portfolio
         strong réalisations
 
     section.tab.filter
-        input#portfolio-all(type="radio" name="portfolio" checked)
-        label(for="portfolio-all") Tout voir
-        input#portfolio-application(type="radio" name="portfolio")
-        label.lenra-icon-devices(for="portfolio-application") Application
-        input#portfolio-web-app(type="radio" name="portfolio")
-        label.lenra-icon-layout(for="portfolio-web-app") Web app
-        input#portfolio-website(type="radio" name="portfolio")
-        label.lenra-icon-globe(for="portfolio-website") Site web
-        input#portfolio-api(type="radio" name="portfolio")
-        label.lenra-icon-zap(for="portfolio-api") API
+        +tab_nav("portfolio", [
+            { id: "all", label: "Tout voir" },
+            { id: "application", label: "Application" },
+            { id: "web-app", label: "Web app" },
+            { id: "website", label: "Site web" },
+            { id: "api", label: "API" },
+        ])
+        
         - var classes = "invert-colors"
         ul
             li.website.web-app.api(class=classes)
                 img(src="../img/portfolio/fitness-park-heroes.jpg" alt="Capture du site de l'événement Fitness Park Heroes 2023")
-                details
+                details.invert-colors
                     summary
                         h3 Fitness Park Heroes 2019 &amp; 2023
                     p
@@ -32,7 +30,7 @@ section#portfolio
 
             li.website(class=classes)
                 img(src="../img/portfolio/lenra-docs.jpg" alt="Capture du site de documentation de Lenra")
-                details
+                details.invert-colors
                     summary
                         h3 Site de documentation Lenra
                     p
@@ -44,7 +42,7 @@ section#portfolio
 
             li.website(class=classes)
                 img(src="../img/portfolio/lenra-website.webp" alt="Capture du site de présentation de Lenra")
-                details
+                details.invert-colors
                     summary
                         h3 Site de présentation Lenra
                     p
@@ -55,7 +53,7 @@ section#portfolio
 
             li.application.web-app.api(class=classes)
                 img(src="../img/portfolio/lenra-back-office.jpg" alt="Capture du back-office de Lenra")
-                details
+                details.invert-colors
                     summary
                         h3 Plateforme Lenra
                     p
@@ -67,7 +65,7 @@ section#portfolio
 
             li.website(class=classes)
                 img(src="../img/portfolio/go-sport-training-festival.webp" alt="Capture du site de l'événement Go Sport Training Festival")
-                details
+                details.invert-colors
                     summary
                         h3 Go Sport Training Festival
                     p
@@ -78,7 +76,7 @@ section#portfolio
 
             li.website.web-app.api(class=classes)
                 img(src="../img/portfolio/rush-challenge.jpg" alt="Capture du site de l'événement Rush Challenge")
-                details
+                details.invert-colors
                     summary
                         h3 Rush Challenge
                     p
@@ -89,7 +87,7 @@ section#portfolio
 
             li.web-app(class=classes)
                 img(src="../img/portfolio/nike-golden-blocks-pegasus35.webp" alt="Capture du site de l'événement Nike Pegasus 35")
-                details
+                details.invert-colors
                     summary
                         h3 Nike - Pegasus 35
                     p

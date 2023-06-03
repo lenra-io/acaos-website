@@ -31,14 +31,20 @@
 }
 
 #portfolio .tab.filter>ul>li>details {
+    --background-color-opcatity: 0.9;
     position: absolute;
     bottom: 0;
     width: 100%;
     max-height: 100%;
     overflow: auto;
-    background-color: rgba(var(--background-color-data), 0.9);
     padding: 1.5rem 1rem 0;
     text-align: left;
+    z-index: 1;
+    background-color: rgba(var(--text-contrast-color-data), var(--background-color-opcatity));
+}
+
+#portfolio .tab.filter>ul>li>details.invert-colors::before {
+    display: none;
 }
 
 #portfolio .tab.filter>ul>li>details[open] {

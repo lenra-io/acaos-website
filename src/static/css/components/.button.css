@@ -197,9 +197,9 @@ nav.social>a {
 
 nav.social.app>a {
     border-radius: 20%;
-    background-color: rgb(var(--background-color-data));
+    background-color: transparent;
     --btn-text-color-data: var(--text-color-data);
-    --btn-text-color-hover-data: var(--background-color-data);
+    --btn-text-color-hover-data: var(--text-contrast-color-data);
 }
 
 nav.social.app>a:hover {

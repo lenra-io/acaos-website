@@ -1,6 +1,7 @@
 .tab {
     margin-top: 2rem;
-    overflow: hidden;
+    position: relative;
+    padding-top: 2rem;
 }
 
 .tab>input[type="radio"] {
@@ -11,7 +12,29 @@
     left: -100vw;
 }
 
-.tab>label {
+.tab>nav {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    left: calc(50% - 50vw);
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.tab>nav>:first-of-type {
+    margin-left: 5%;
+}
+
+.tab>nav>:last-of-type {
+    margin-right: 5%;
+}
+
+
+.tab>ul {
+    overflow: hidden;
+}
+
+label:is(.tab>*, .tab>nav>*) {
     position: relative;
     display: inline-block;
     padding: calc(0.5rem * 3 / 4) 1rem;
@@ -21,11 +44,11 @@
     transition-property: color, background-color;
 }
 
-.tab>label:is([class^="lenra-icon-"], [class*=" lenra-icon-"]) {
+label:is(.tab>*, .tab>nav>*):is([class^="lenra-icon-"], [class*=" lenra-icon-"]) {
     padding-left: calc(1rem + 1rem + 0.5rem);
 }
 
-.tab>label:is([class^="lenra-icon-"], [class*=" lenra-icon-"])::before {
+label:is(.tab>*, .tab>nav>*):is([class^="lenra-icon-"], [class*=" lenra-icon-"])::before {
     position: absolute;
     left: 1rem;
     top: 50%;
@@ -33,17 +56,37 @@
     color: inherit;
 }
 
-.tab>input[type="radio"]:checked+label {
+label:is(.tab>input[type="radio"]:checked+*,
+    .tab>input[type="radio"]:nth-of-type(1):checked~nav>*:nth-of-type(1),
+    .tab>input[type="radio"]:nth-of-type(2):checked~nav>*:nth-of-type(2),
+    .tab>input[type="radio"]:nth-of-type(3):checked~nav>*:nth-of-type(3),
+    .tab>input[type="radio"]:nth-of-type(4):checked~nav>*:nth-of-type(4),
+    .tab>input[type="radio"]:nth-of-type(5):checked~nav>*:nth-of-type(5),
+    .tab>input[type="radio"]:nth-of-type(6):checked~nav>*:nth-of-type(6),
+    .tab>input[type="radio"]:nth-of-type(7):checked~nav>*:nth-of-type(7),
+    .tab>input[type="radio"]:nth-of-type(8):checked~nav>*:nth-of-type(8),
+    .tab>input[type="radio"]:nth-of-type(9):checked~nav>*:nth-of-type(9),
+    .tab>input[type="radio"]:nth-of-type(10):checked~nav>*:nth-of-type(10)) {
     background-color: rgb(var(--primary-color-data));
     color: rgb(var(--white-data));
 }
 
-.tab>input[type="radio"]:focus+label {
+label:is(.tab>input[type="radio"]:focus+*,
+    .tab>input[type="radio"]:nth-of-type(1):focus~nav>*:nth-of-type(1),
+    .tab>input[type="radio"]:nth-of-type(2):focus~nav>*:nth-of-type(2),
+    .tab>input[type="radio"]:nth-of-type(3):focus~nav>*:nth-of-type(3),
+    .tab>input[type="radio"]:nth-of-type(4):focus~nav>*:nth-of-type(4),
+    .tab>input[type="radio"]:nth-of-type(5):focus~nav>*:nth-of-type(5),
+    .tab>input[type="radio"]:nth-of-type(6):focus~nav>*:nth-of-type(6),
+    .tab>input[type="radio"]:nth-of-type(7):focus~nav>*:nth-of-type(7),
+    .tab>input[type="radio"]:nth-of-type(8):focus~nav>*:nth-of-type(8),
+    .tab>input[type="radio"]:nth-of-type(9):focus~nav>*:nth-of-type(9),
+    .tab>input[type="radio"]:nth-of-type(10):focus~nav>*:nth-of-type(10)) {
     outline: solid 0.125rem;
     outline-offset: -0.25rem;
 }
 
-.tab>label::after {
+label:is(.tab>*, .tab>nav>*)::after {
     content: " ";
     position: absolute;
     width: 100%;
@@ -54,12 +97,12 @@
     cursor: pointer;
 }
 
-.tab>label:first-of-type::after {
+label:is(.tab>*, .tab>nav>*):first-of-type::after {
     border-top-left-radius: inherit;
     border-bottom-left-radius: inherit;
 }
 
-.tab>label:last-of-type::after {
+label:is(.tab>*, .tab>nav>*):last-of-type::after {
     border-top-right-radius: inherit;
     border-bottom-right-radius: inherit;
 }
@@ -134,15 +177,15 @@
 
 
 @media (min-width: 50rem) {
-    .tab>label {
+    label:is(.tab>*, .tab>nav>*) {
         padding: 0.5rem 2rem;
     }
 
-    .tab>label:is([class^="lenra-icon-"], [class*=" lenra-icon-"]) {
+    label:is(.tab>*, .tab>nav>*):is([class^="lenra-icon-"], [class*=" lenra-icon-"]) {
         padding-left: calc(2rem + 1rem + 0.5rem);
     }
-    
-    .tab>label:is([class^="lenra-icon-"], [class*=" lenra-icon-"])::before {
+
+    label:is(.tab>*, .tab>nav>*):is([class^="lenra-icon-"], [class*=" lenra-icon-"])::before {
         left: 2rem;
     }
 }
