@@ -18,10 +18,10 @@
 <br />
 <div align="center">
 
-<h3 align="center">Lenra's website</h3>
+<h3 align="center">Lenra's prestation website</h3>
 
   <p align="center">
-    The Lenra's project presentation website.
+    The Lenra's web agency website.
     <br />
     <br />
     <a href="https://github.com/lenra-io/website/issues">Report Bug</a>
@@ -37,9 +37,9 @@ This project uses the [Lesta framework](https://github.com/lenra-io/lesta).
 
 ## Getting started
 
-You can run this project from the [Docker image](https://hub.docker.com/r/lenra/website):
+You can run this project from the [Docker image](https://hub.docker.com/r/lenra/prestation-website):
 ```console
-docker run --rm -it -p 8080:8080 lenra/website
+docker run --rm -it -p 8080:8080 lenra/prestation-website
 ```
 
 Or you can run it with NodeJS:

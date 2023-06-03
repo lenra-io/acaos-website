@@ -1,6 +1,6 @@
 extends .layout.pug
 
-include components/tab.pug
+include components/.tab.pug
 mixin displayTechnologies(techs)
     ul.technologies
         each technology in techs
@@ -26,7 +26,7 @@ block content
 
         p Notre équipe est là pour vous écouter et répondre à toutes vos questions
 
-        include components/contact-button.pug
+        include components/.contact-button.pug
 
     include parts/.team.pug
     include parts/.contact.pug
