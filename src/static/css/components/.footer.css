@@ -140,7 +140,6 @@ body>footer>aside>#wcb.carbonbadge {
         position: absolute;
         left: 0;
         bottom: var(--vertical-padding);
-        /* text-align: right; */
     }
 }
 
