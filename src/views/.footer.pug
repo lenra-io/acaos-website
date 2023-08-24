@@ -16,15 +16,11 @@ mixin displayFooterGroup(group)
             +displayFooterPageLink(page)
 
 footer.invert-colors
-    a(href="/") Lenra
+    a(href="/") Acaos
     nav 
         - const groups = footerGroups.map(p => ({...footerGroupsData[p], id: p}));
         each el in groups
             +displayFooterGroup(el)
-
-    ul 
-        li Suivez nous
-            +social().app
     
     aside
         div(id="wcb" class="carbonbadge wcb-d")

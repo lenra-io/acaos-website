@@ -18,15 +18,15 @@
 <br />
 <div align="center">
 
-<h3 align="center">Lenra's prestation website</h3>
+<h3 align="center">Acaos' presentation website</h3>
 
   <p align="center">
-    The Lenra's web agency website.
+    The Acaos's web agency website.
     <br />
     <br />
-    <a href="https://github.com/lenra-io/website/issues">Report Bug</a>
+    <a href="https://github.com/lenra-io/acaos-website/issues">Report Bug</a>
     ·
-    <a href="https://github.com/lenra-io/website/issues">Request Feature</a>
+    <a href="https://github.com/lenra-io/acaos-website/issues">Request Feature</a>
   </p>
 </div>
 
@@ -37,9 +37,9 @@ This project uses the [Lesta framework](https://github.com/lenra-io/lesta).
 
 ## Getting started
 
-You can run this project from the [Docker image](https://hub.docker.com/r/lenra/prestation-website):
+You can run this project from the [Docker image](https://hub.docker.com/r/lenra/acaos-website):
 ```console
-docker run --rm -it -p 8080:8080 lenra/prestation-website
+docker run --rm -it -p 8080:8080 lenra/acaos-website
 ```
 
 Or you can run it with NodeJS:
@@ -50,7 +50,7 @@ npm start
 
 The website will be available at http://localhost:8080/
 
-To run it locally with the [Ghorgamel](https://github.com/lenra-io/ghorgamel) integration (requires [Dofigen](https://github.com/lenra-io/dofigen)):
+To run it locally with Docker Compose:
 ```console
 dofigen dofigen.yml
 docker-compose build
@@ -88,20 +88,20 @@ Distributed under the **MIT** License. See [LICENSE](./LICENSE) for more informa
 
 Lenra - [@lenra_dev](https://twitter.com/lenra_dev) - contact@lenra.io
 
-Project Link: [https://github.com/lenra-io/website](https://github.com/lenra-io/website)
+Project Link: [https://github.com/lenra-io/acaos-website](https://github.com/lenra-io/acaos-website)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/lenra-io/website.svg?style=for-the-badge
-[contributors-url]: https://github.com/lenra-io/website/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/lenra-io/website.svg?style=for-the-badge
-[forks-url]: https://github.com/lenra-io/website/network/members
-[stars-shield]: https://img.shields.io/github/stars/lenra-io/website.svg?style=for-the-badge
-[stars-url]: https://github.com/lenra-io/website/stargazers
-[issues-shield]: https://img.shields.io/github/issues/lenra-io/website.svg?style=for-the-badge
-[issues-url]: https://github.com/lenra-io/website/issues
-[license-shield]: https://img.shields.io/github/license/lenra-io/website.svg?style=for-the-badge
-[license-url]: https://github.com/lenra-io/website/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/lenra-io/acaos-website.svg?style=for-the-badge
+[contributors-url]: https://github.com/lenra-io/acaos-website/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/lenra-io/acaos-website.svg?style=for-the-badge
+[forks-url]: https://github.com/lenra-io/acaos-website/network/members
+[stars-shield]: https://img.shields.io/github/stars/lenra-io/acaos-website.svg?style=for-the-badge
+[stars-url]: https://github.com/lenra-io/acaos-website/stargazers
+[issues-shield]: https://img.shields.io/github/issues/lenra-io/acaos-website.svg?style=for-the-badge
+[issues-url]: https://github.com/lenra-io/acaos-website/issues
+[license-shield]: https://img.shields.io/github/license/lenra-io/acaos-website.svg?style=for-the-badge
+[license-url]: https://github.com/lenra-io/acaos-website/blob/master/LICENSE

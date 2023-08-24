@@ -45,7 +45,7 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PERSONNAL_TOKEN }}
-          DOCKER_IMAGE: lenra/prestation-website
+          DOCKER_IMAGE: lenra/acaos-website
         run: |
           sudo chown $USER:$USER .github/release.sh
           sudo chmod +x .github/release.sh

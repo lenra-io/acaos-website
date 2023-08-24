@@ -118,6 +118,10 @@ body>footer>aside>#wcb.carbonbadge {
     text-align: inherit;
 }
 
+#wcb #wcb_g {
+    background: transparent !important;
+}
+
 
 @media (min-width: 44rem) {
     body>footer>nav {
@@ -131,16 +135,11 @@ body>footer>aside>#wcb.carbonbadge {
     }
 }
 
-@media (min-width: 50rem) {
-    body>footer>nav>section#financed-by {
-        flex-basis: 25rem;
-    }
-
+@media (min-width: 55rem) {
     body>footer>aside {
         position: absolute;
-        right: 0;
+        left: 0;
         bottom: var(--vertical-padding);
-        text-align: right;
     }
 }
 

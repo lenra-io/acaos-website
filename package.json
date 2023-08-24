@@ -1,6 +1,6 @@
 {
-    "name": "prestation-website",
-    "description": "Lenra website for website and app creation prestations",
+    "name": "acaos-website",
+    "description": "Acaos presentation website for website and app creation prestations",
     "authors": "Lenra",
     "version": "0.0.0",
     "scripts": {
