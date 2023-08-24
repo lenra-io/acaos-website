@@ -1,6 +1,6 @@
 services:
   website:
-    image: lenra/prestation-website:local
+    image: lenra/acaos-website:local
     build:
       context: .
     ports:
